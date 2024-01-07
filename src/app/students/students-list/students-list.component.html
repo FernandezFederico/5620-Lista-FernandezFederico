@@ -7,6 +7,6 @@
         }">
         <span>{{student.id}} - {{student.nombre}}</span>
         <span>{{student.asistencia ? 'Presente' : 'Ausente' | uppercase}}</span>
-        <button (click)="student.asistencia = !student.asistencia">Asistencia</button>
+        <button type="button" (click)="toggleAsistencia(student)">Asistencia</button>
     </li>
 </ul>

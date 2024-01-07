@@ -46,4 +46,8 @@ export class StudentsListComponent {
 
   ]
 
+  toggleAsistencia(student: any) {
+    student.asistencia = !student.asistencia
+  }
+
 }
